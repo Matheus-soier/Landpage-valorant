@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "valorantbold";
+  src: url(../fonts/DINNextW1G-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "valorantregular";
+  src: url(../fonts/DINNextW1G-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "valorantlight";
+  src: url(../fonts/DINNextW1G-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "valorantboldtung";
+  src: url(../fonts/Tungsten-Bold.otf) format("opentype");
+}
+
+:root {
+  --font-bold: "valorantbold";
+  --font-light: "valorantlight";
+  --font-regular: "valorantregular";
+  --font-boldtu: "valorantboldtung";
+  --bg-btn: #ff4655;
+  --bg-btn2: rgba(0, 0, 0, 0.938);
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: var(--font-regular);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-btn2);
+}
+
+.conteiner-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid rgb(65, 63, 63);
+  height: 80px;
+  padding: 8px;
+}
+
+header .logo img {
+  width: 70px;
+}
+
+.conteiner-menu ul {
+  display: flex;
+  gap: 70px;
+}
+
+.conteiner-menu ul a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+.conteiner-menu ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.conteiner-menu ul li a:hover {
+  color: var(--bg-btn);
+}
+
+.conteiner-menu .btn a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ff4655;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.conteiner-menu .btn a:hover {
+  background-color: white;
+  color: var(--bg-btn);
+}
+
+.conteiner-menu .btn {
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  padding: 15px 6px;
+  border-radius: 5px;
+}
+
+.banner video {
+  width: 100%;
+  height: calc(85vh - 80px);
+  opacity: 0.8;
+  position: absolute;
+  background-color: black;
+  object-fit: cover;
+}
+
+.conteiner-banner {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(85vh - 80px);
+  gap: 40px;
+}
+
+.conteiner-banner img {
+  width: 700px;
+}
+
+.conteiner-banner a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ff4655;
+  padding: 20px 80px;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.conteiner-banner a:hover {
+  background-color: #912b33;
+}
+
+.conteiner-play {
+  background-image: url("../images/backgroundvalorant.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.max-container {
+  padding: 150px 120px;
+  width: 1400px;
+  margin: auto;
+}
+
+.max-container h2 {
+  font-size: 156px;
+  text-transform: uppercase;
+  color: #0f1923;
+  font-family: var(--font-boldtu);
+  line-height: 150px;
+  letter-spacing: -1px;
+}
+
+.conteiner-play p {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner-play a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ff4655;
+  padding: 20px 20px;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  width: 200px;
+}
+
+.conteiner-play video {
+  width: 100%;
+}
+
+.text-video {
+  margin-top: 80px;
+  display: flex;
+  gap: 80px;
+}
+
+.text-play {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-play p {
+  color: #0f1923ad;
+  font-size: 1.1rem;
+  width: 400px;
+}
+
+.video-play {
+  flex: 1;
+}
+
+.form form, .form fieldset{
+  display: flex;
+  flex-direction: column;
+}
+
+.form fieldset{
+  width: 500px;
+  border: 0px;
+
+}
+
+.form form button{
+  width: 500px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ff4655;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  border: 0px;
+  margin-top: 20px;
+}
+
+.form form button:hover{
+  background-color: #912b33;
+  border-radius: 6px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 50px 0;
+  background-color: #ECE8E1;
+}
+
+.form fieldset legend{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: var(--font-bold);
+}
+
+.form fieldset label{
+  margin: 20px 0 3px 0;
+  text-transform: uppercase;
+}
+
+input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: 0;
+}
+
+input:nth-last-child(1){
+  height: 200px;
+}
+
+.text-play {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-play h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.conteiner-play a:hover {
+  background-color: #912b33;
+}
+
+.div-top {
+  background-color: #292929;
+  padding: 20px 20px;
+}
+
+.div-top ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.div-top ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: var(--font-regular);
+  text-transform: uppercase;
+  padding: 8px 15px;
+}
+
+.div-top ul li a:hover{
+  text-decoration: underline;
+  padding: 8px 15px;
+  background-color: rgba(143, 143, 143, 0.185);
+  border-radius: 6px;
+}
+
+.div-bottom{
+  background-color: #111111;
+}
+
+.footer-social{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+.footer-social i{
+  font-size: 18px;
+  color: white;
+  background-color: rgba(143, 143, 143, 0.185);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.icons svg{
+  fill: #737373;
+}
+
+.icons svg:hover{
+  fill: #d8d6d6;
+}
+
+.footer-icons p{
+  width: 600px;
+  color: #737373;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.footer-terms ul{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+.footer-terms ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 15px;
+}
+
+.footer-terms ul li a:hover{
+  text-decoration: underline;
+  padding: 8px 15px;
+  background-color: rgba(143, 143, 143, 0.185);
+  border-radius: 6px;
+}
+
+.footer-class{
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.footer-class img{
+  background-color: #2e2e2e;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
