@@ -259,15 +259,12 @@ header .logo img {
   text-transform: uppercase;
 }
 
-input{
+input, textarea{
   padding: 10px;
   border-radius: 5px;
   border: 1px solid black;
   outline: 0;
-}
-
-input:nth-last-child(1){
-  height: 200px;
+  resize: none;
 }
 
 .text-play {

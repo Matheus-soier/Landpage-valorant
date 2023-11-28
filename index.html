@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/de6dc9fc6e.js" crossorigin="anonymous" defer></script>
+    <script src="assets/js/script.js" defer></script>
     <title>Valorant</title>
 </head>
 
@@ -64,21 +65,23 @@
                 </div>
             </div>
             <div class="form">
-                <form action="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <legend>
-                            contato
-                        </legend>
-                        <label for="name">nome:</label>
-                        <input type="text" required maxlength="100" placeholder="Digite seu nome">
-                        <label for="email">email:</label>
-                        <input type="email" required placeholder="Digite seu email">
-                        <label for="duvida">duvida:</label>
-                        <input type="text" required>
-                    </fieldset>
-                    <button type="submit">enviar</button>
+                <form>
+                  <fieldset>
+                    <legend>Contato</legend>
+              
+                    <label for="name">Nome:</label>
+                    <input id="inputNome" type="text" maxlength="100" placeholder="Digite seu nome">
+              
+                    <label for="email">Email:</label>
+                    <input id="inputEmail" type="email" placeholder="Digite seu email">
+              
+                    <label for="duvida">Dúvida:</label>
+                    <textarea id="inputDuvida" name="duvida" rows="6"></textarea>
+              
+                  </fieldset>
+                  <button id="enviarForm" type="submit">Enviar</button>
                 </form>
-            </div>
+              </div>
         </main>
 
         <footer>
